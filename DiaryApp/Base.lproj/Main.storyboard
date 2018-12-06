@@ -19,13 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klw-ee-5ue" customClass="JBDatePickerView" customModule="JBDatePicker">
-                                <rect key="frame" x="0.0" y="20" width="375" height="550"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-Bi-1jG">
-                                <rect key="frame" x="127" y="607" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-Bi-1jG">
+                                <rect key="frame" x="127.5" y="607" width="120" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.46274509800000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="BrV-Tp-M01"/>
                                     <constraint firstAttribute="height" constant="40" id="Poj-i6-LDu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -40,7 +41,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Klw-ee-5ue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ZW-1f-GyT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Klw-ee-5ue" secondAttribute="bottom" constant="97" id="GBf-Y1-9Dc"/>
+                            <constraint firstItem="tiK-Bi-1jG" firstAttribute="top" secondItem="Klw-ee-5ue" secondAttribute="bottom" constant="40" id="GBf-Y1-9Dc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Klw-ee-5ue" secondAttribute="trailing" id="YS7-kf-z0j"/>
                             <constraint firstItem="Klw-ee-5ue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bc4-Rh-Fn5"/>
                             <constraint firstItem="Klw-ee-5ue" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bgQ-vZ-m7N"/>
@@ -70,25 +71,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-EY-hE2">
-                                <rect key="frame" x="170" y="73" width="35" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="157" y="65.5" width="61" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Byz-n3-LbX">
-                                <rect key="frame" x="40" y="114" width="295" height="479.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Byz-n3-LbX" customClass="PlaceHolderTextView" customModule="DiaryApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="121.5" width="335" height="475.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="入力"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="ydf-8Z-yx9" id="2bY-aV-sAJ"/>
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR5-XH-qJs">
-                                <rect key="frame" x="122.5" y="613.5" width="130" height="40"/>
+                                <rect key="frame" x="127.5" y="607" width="120" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.46274509800000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="C7T-XY-Sz0"/>
+                                    <constraint firstAttribute="width" constant="120" id="C7T-XY-Sz0"/>
                                     <constraint firstAttribute="height" constant="40" id="HIL-nR-vwa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -102,19 +106,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Byz-n3-LbX" firstAttribute="leading" secondItem="fJG-cQ-J1q" secondAttribute="leading" constant="40" id="Sjb-Vm-odi"/>
+                            <constraint firstItem="Byz-n3-LbX" firstAttribute="leading" secondItem="fJG-cQ-J1q" secondAttribute="leading" constant="20" id="Sjb-Vm-odi"/>
                             <constraint firstItem="0eY-EY-hE2" firstAttribute="centerX" secondItem="KWG-Ic-qOu" secondAttribute="centerX" id="T3r-t1-Iem"/>
                             <constraint firstItem="xR5-XH-qJs" firstAttribute="centerX" secondItem="KWG-Ic-qOu" secondAttribute="centerX" id="V0C-ql-GTc"/>
                             <constraint firstItem="Byz-n3-LbX" firstAttribute="top" secondItem="0eY-EY-hE2" secondAttribute="bottom" constant="20" id="Y8f-gn-jKk"/>
-                            <constraint firstItem="xR5-XH-qJs" firstAttribute="top" secondItem="Byz-n3-LbX" secondAttribute="bottom" constant="20" id="cAL-bt-5Y7"/>
+                            <constraint firstItem="xR5-XH-qJs" firstAttribute="top" secondItem="Byz-n3-LbX" secondAttribute="bottom" constant="10" id="cAL-bt-5Y7"/>
                             <constraint firstItem="0eY-EY-hE2" firstAttribute="centerY" secondItem="KWG-Ic-qOu" secondAttribute="centerY" multiplier="0.25" id="sTF-Jm-MEs"/>
-                            <constraint firstItem="fJG-cQ-J1q" firstAttribute="trailing" secondItem="Byz-n3-LbX" secondAttribute="trailing" constant="40" id="wT3-jo-VAY"/>
-                            <constraint firstItem="xR5-XH-qJs" firstAttribute="centerY" secondItem="KWG-Ic-qOu" secondAttribute="centerY" multiplier="1.9" id="yMY-CN-28R"/>
+                            <constraint firstItem="fJG-cQ-J1q" firstAttribute="trailing" secondItem="Byz-n3-LbX" secondAttribute="trailing" constant="20" id="wT3-jo-VAY"/>
+                            <constraint firstItem="xR5-XH-qJs" firstAttribute="centerY" secondItem="KWG-Ic-qOu" secondAttribute="centerY" multiplier="1.9" constant="-6.6499999999999773" id="yMY-CN-28R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fJG-cQ-J1q"/>
                     </view>
                     <connections>
-                        <outlet property="contextTextView" destination="Byz-n3-LbX" id="4EI-dW-ksh"/>
+                        <outlet property="contextView" destination="Byz-n3-LbX" id="Nhh-J6-Qrw"/>
                         <outlet property="dateLabel" destination="0eY-EY-hE2" id="UqT-fD-vKY"/>
                     </connections>
                 </viewController>
