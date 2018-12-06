@@ -50,8 +50,8 @@ class ViewController: UIViewController, JBDatePickerViewDelegate {
     
     lazy var dateFormatter: DateFormatter = {
         var formatter = DateFormatter()
-        formatter.timeStyle = .none
-        formatter.dateStyle = .medium
+        formatter.dateFormat = "yyyy    MM/dd"
+        formatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
         return formatter
     }()
 

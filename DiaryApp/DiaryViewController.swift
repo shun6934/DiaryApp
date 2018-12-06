@@ -21,6 +21,18 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
         
         contextTextView.delegate = self
         
+        let keyBoardToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        keyBoardToolBar.barStyle = UIBarStyle.default
+        keyBoardToolBar.sizeToFit()
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,
+                                     target: self,
+                                     action: nil)
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done,
+                                           target: self,
+                                           action: #selector(self.commitButtonTapped))
+        keyBoardToolBar.items = [spacer, commitButton]
+        contextTextView.inputAccessoryView = keyBoardToolBar
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,14 +73,7 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
 
     }
     
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        
-        if (text == "\n") {
-            //あなたのテキストフィールド
-            contextTextView.resignFirstResponder()
-            return false
-        }
-        return true
+    @objc func commitButtonTapped() {
+        self.view.endEditing(true)
     }
-
 }
