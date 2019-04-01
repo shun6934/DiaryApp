@@ -12,15 +12,14 @@ import UIKit
     
     private lazy var placeHolderLabel = UILabel()
     
+    var date: String!
+    
     // プレースホルダー
     @IBInspectable var placeHolder: String = "" {
         didSet {
-            let textViewnWidth: CGFloat = self.bounds.width
-            let textViewnHeight: CGFloat = self.bounds.height
-            
             self.placeHolderLabel.frame.size = CGSize(width: 20, height: 20)
-            self.placeHolderLabel.layer.position = CGPoint(x: textViewnWidth / 2, y: textViewnHeight / 2)
-            self.placeHolderLabel.textAlignment = NSTextAlignment.left
+            self.placeHolderLabel.layer.position = CGPoint(x: 0, y: 17)
+            self.placeHolderLabel.textAlignment = NSTextAlignment.center
             self.placeHolderLabel.text = self.placeHolder
             self.placeHolderLabel.sizeToFit()
         }

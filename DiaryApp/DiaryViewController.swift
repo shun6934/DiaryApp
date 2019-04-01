@@ -12,26 +12,18 @@ import RealmSwift
 class DiaryViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet var dateLabel: UILabel!
-    @IBOutlet var contextTextView: UITextView!
+    @IBOutlet weak var contextView: PlaceHolderTextView!
     
     var date: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        contextTextView.delegate = self
-        
-        let keyBoardToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
-        keyBoardToolBar.barStyle = UIBarStyle.default
-        keyBoardToolBar.sizeToFit()
-        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,
-                                     target: self,
-                                     action: nil)
-        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done,
-                                           target: self,
-                                           action: #selector(self.commitButtonTapped))
-        keyBoardToolBar.items = [spacer, commitButton]
-        contextTextView.inputAccessoryView = keyBoardToolBar
+        contextView.delegate = self
+        contextView.layer.borderColor = UIColor.black.cgColor
+        contextView.layer.borderWidth = 1.0
+        contextView.layer.cornerRadius = 10.0
+        contextView.layer.masksToBounds = true
         
     }
     
@@ -46,7 +38,7 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
             if let savedDiary = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
                 let context = savedDiary.context
                 DispatchQueue.main.async {
-                    self.contextTextView.text = context
+                    self.contextView.text = context
                 }
             }
         }
@@ -63,7 +55,7 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
         
         let diary = Diary()
         diary.date = date
-        diary.context = contextTextView.text
+        diary.context = contextView.text
         
         try! realm.write {
             realm.add(diary, update: true)
@@ -71,9 +63,5 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
         
         self.dismiss(animated: true, completion: nil)
 
-    }
-    
-    @objc func commitButtonTapped() {
-        self.view.endEditing(true)
     }
 }
