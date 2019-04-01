@@ -26,33 +26,28 @@
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "DiaryIcon-6.png",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "DiaryIcon-5.png",
+      "size" : "60x60",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "DiaryIcon-4.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
-      "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-17.png",
+      "size" : "20x20",
       "scale" : "1x"
     },
     {
-      "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-15.png",
+      "size" : "20x20",
       "scale" : "2x"
     },
     {
@@ -66,27 +61,23 @@
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-11.png",
+      "size" : "40x40",
       "scale" : "1x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-8.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-3.png",
+      "size" : "76x76",
       "scale" : "1x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "DiaryIcon-2.png",
+      "size" : "76x76",
       "scale" : "2x"
     },
     {
