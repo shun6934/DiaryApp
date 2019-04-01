@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2131EFBF20999CD90056883D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFBE20999CD90056883D /* AppDelegate.swift */; };
-		2131EFC120999CD90056883D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFC020999CD90056883D /* ViewController.swift */; };
+		2131EFC120999CD90056883D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFC020999CD90056883D /* CalendarViewController.swift */; };
 		2131EFC420999CD90056883D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC220999CD90056883D /* Main.storyboard */; };
 		2131EFC620999CDD0056883D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC520999CDD0056883D /* Assets.xcassets */; };
 		2131EFC920999CDD0056883D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC720999CDD0056883D /* LaunchScreen.storyboard */; };
-		2131EFD420999CDD0056883D /* DiaryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFD320999CDD0056883D /* DiaryAppTests.swift */; };
-		2131EFDF20999CDD0056883D /* DiaryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFDE20999CDD0056883D /* DiaryAppUITests.swift */; };
 		2131EFEF2099A4450056883D /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFEE2099A4450056883D /* Diary.swift */; };
 		216B2F8420CBADEC001A730C /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B2F8320CBADEC001A730C /* DiaryViewController.swift */; };
-		2A453123CD343061644FAD77 /* Pods_DiaryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819E7A8E08D1B6F3EADFEDFB /* Pods_DiaryAppUITests.framework */; };
-		986D284FD0847C29D919538F /* Pods_DiaryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7AFA45B1A6D297BF566CB2 /* Pods_DiaryAppTests.framework */; };
+		21B31B6B21B91D3A00BCC6D0 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B31B6A21B91D3900BCC6D0 /* PlaceHolderTextView.swift */; };
+		5870EB791D9A139E8E1CFE7B /* Pods_DiaryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7EDDB009A7CC81D2EC4F0 /* Pods_DiaryAppTests.framework */; };
 		BE0662DB2C16CD8B02E8FFE0 /* Pods_DiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE36A6B41A3C7A4F9BB6CA24 /* Pods_DiaryApp.framework */; };
+		FB5D3A174B69F5638D09286A /* Pods_DiaryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884F8B78E8F918FBAC632AF7 /* Pods_DiaryAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,23 +40,20 @@
 /* Begin PBXFileReference section */
 		2131EFBB20999CD90056883D /* DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2131EFBE20999CD90056883D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2131EFC020999CD90056883D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2131EFC020999CD90056883D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2131EFC320999CD90056883D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2131EFC520999CDD0056883D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2131EFC820999CDD0056883D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2131EFCA20999CDD0056883D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2131EFCF20999CDD0056883D /* DiaryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2131EFD320999CDD0056883D /* DiaryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAppTests.swift; sourceTree = "<group>"; };
-		2131EFD520999CDD0056883D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2131EFDA20999CDD0056883D /* DiaryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2131EFDE20999CDD0056883D /* DiaryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAppUITests.swift; sourceTree = "<group>"; };
-		2131EFE020999CDD0056883D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2131EFEE2099A4450056883D /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		216B2F8320CBADEC001A730C /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		21B31B6A21B91D3900BCC6D0 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		7E3051C19BF90F5B00E940EF /* Pods-DiaryAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryAppUITests/Pods-DiaryAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		819E7A8E08D1B6F3EADFEDFB /* Pods_DiaryAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8831CEBF5366B703937F964E /* Pods-DiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryApp/Pods-DiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
-		9F7AFA45B1A6D297BF566CB2 /* Pods_DiaryAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884F8B78E8F918FBAC632AF7 /* Pods_DiaryAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC7EDDB009A7CC81D2EC4F0 /* Pods_DiaryAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0CD891406FA86722EA2636 /* Pods-DiaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryApp/Pods-DiaryApp.release.xcconfig"; sourceTree = "<group>"; };
 		E45584FB6A52F60B0C04B19D /* Pods-DiaryAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryAppUITests/Pods-DiaryAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4B5D4340366D2835177EB55 /* Pods-DiaryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryAppTests/Pods-DiaryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986D284FD0847C29D919538F /* Pods_DiaryAppTests.framework in Frameworks */,
+				5870EB791D9A139E8E1CFE7B /* Pods_DiaryAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A453123CD343061644FAD77 /* Pods_DiaryAppUITests.framework in Frameworks */,
+				FB5D3A174B69F5638D09286A /* Pods_DiaryAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				2131EFBD20999CD90056883D /* DiaryApp */,
-				2131EFD220999CDD0056883D /* DiaryAppTests */,
-				2131EFDD20999CDD0056883D /* DiaryAppUITests */,
 				2131EFBC20999CD90056883D /* Products */,
 				B88AF3C119BA5515AE870B10 /* Pods */,
 				876F96D523E41BAB4E1760CA /* Frameworks */,
@@ -119,41 +113,24 @@
 			isa = PBXGroup;
 			children = (
 				2131EFBE20999CD90056883D /* AppDelegate.swift */,
-				2131EFC020999CD90056883D /* ViewController.swift */,
+				2131EFC020999CD90056883D /* CalendarViewController.swift */,
 				216B2F8320CBADEC001A730C /* DiaryViewController.swift */,
 				2131EFC220999CD90056883D /* Main.storyboard */,
 				2131EFC520999CDD0056883D /* Assets.xcassets */,
 				2131EFC720999CDD0056883D /* LaunchScreen.storyboard */,
 				2131EFCA20999CDD0056883D /* Info.plist */,
 				2131EFEE2099A4450056883D /* Diary.swift */,
+				21B31B6A21B91D3900BCC6D0 /* PlaceHolderTextView.swift */,
 			);
 			path = DiaryApp;
-			sourceTree = "<group>";
-		};
-		2131EFD220999CDD0056883D /* DiaryAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				2131EFD320999CDD0056883D /* DiaryAppTests.swift */,
-				2131EFD520999CDD0056883D /* Info.plist */,
-			);
-			path = DiaryAppTests;
-			sourceTree = "<group>";
-		};
-		2131EFDD20999CDD0056883D /* DiaryAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2131EFDE20999CDD0056883D /* DiaryAppUITests.swift */,
-				2131EFE020999CDD0056883D /* Info.plist */,
-			);
-			path = DiaryAppUITests;
 			sourceTree = "<group>";
 		};
 		876F96D523E41BAB4E1760CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				EE36A6B41A3C7A4F9BB6CA24 /* Pods_DiaryApp.framework */,
-				9F7AFA45B1A6D297BF566CB2 /* Pods_DiaryAppTests.framework */,
-				819E7A8E08D1B6F3EADFEDFB /* Pods_DiaryAppUITests.framework */,
+				ADC7EDDB009A7CC81D2EC4F0 /* Pods_DiaryAppTests.framework */,
+				884F8B78E8F918FBAC632AF7 /* Pods_DiaryAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,10 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2131EFC120999CD90056883D /* ViewController.swift in Sources */,
+				2131EFC120999CD90056883D /* CalendarViewController.swift in Sources */,
 				2131EFBF20999CD90056883D /* AppDelegate.swift in Sources */,
 				2131EFEF2099A4450056883D /* Diary.swift in Sources */,
 				216B2F8420CBADEC001A730C /* DiaryViewController.swift in Sources */,
+				21B31B6B21B91D3A00BCC6D0 /* PlaceHolderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +377,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2131EFD420999CDD0056883D /* DiaryAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2131EFDF20999CDD0056883D /* DiaryAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

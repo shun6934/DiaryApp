@@ -10,8 +10,8 @@ import Foundation
 import RealmSwift
 
 class Diary: Object {
-    @objc var date = ""
-    @objc var context = ""
+    @objc dynamic var date = ""
+    @objc dynamic var context = ""
     
     override static func primaryKey() -> String {
         return "date"
