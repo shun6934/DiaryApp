@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2131EFBF20999CD90056883D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFBE20999CD90056883D /* AppDelegate.swift */; };
-		2131EFC120999CD90056883D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFC020999CD90056883D /* ViewController.swift */; };
+		2131EFC120999CD90056883D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EFC020999CD90056883D /* CalendarViewController.swift */; };
 		2131EFC420999CD90056883D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC220999CD90056883D /* Main.storyboard */; };
 		2131EFC620999CDD0056883D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC520999CDD0056883D /* Assets.xcassets */; };
 		2131EFC920999CDD0056883D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131EFC720999CDD0056883D /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2131EFBB20999CD90056883D /* DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2131EFBE20999CD90056883D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2131EFC020999CD90056883D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2131EFC020999CD90056883D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2131EFC320999CD90056883D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2131EFC520999CDD0056883D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2131EFC820999CDD0056883D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				2131EFBE20999CD90056883D /* AppDelegate.swift */,
-				2131EFC020999CD90056883D /* ViewController.swift */,
+				2131EFC020999CD90056883D /* CalendarViewController.swift */,
 				216B2F8320CBADEC001A730C /* DiaryViewController.swift */,
 				2131EFC220999CD90056883D /* Main.storyboard */,
 				2131EFC520999CDD0056883D /* Assets.xcassets */,
