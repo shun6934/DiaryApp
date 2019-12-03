@@ -105,12 +105,12 @@
 				2131EFBE20999CD90056883D /* AppDelegate.swift */,
 				2131EFC020999CD90056883D /* CalendarViewController.swift */,
 				216B2F8320CBADEC001A730C /* DiaryViewController.swift */,
+				21B31B6A21B91D3900BCC6D0 /* PlaceHolderTextView.swift */,
+				2131EFEE2099A4450056883D /* Diary.swift */,
 				2131EFC220999CD90056883D /* Main.storyboard */,
 				2131EFC520999CDD0056883D /* Assets.xcassets */,
 				2131EFC720999CDD0056883D /* LaunchScreen.storyboard */,
 				2131EFCA20999CDD0056883D /* Info.plist */,
-				2131EFEE2099A4450056883D /* Diary.swift */,
-				21B31B6A21B91D3900BCC6D0 /* PlaceHolderTextView.swift */,
 			);
 			path = DiaryApp;
 			sourceTree = "<group>";

@@ -20,6 +20,8 @@ class CalendarViewController: UIViewController, JBDatePickerViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         datePickerView.delegate = self
+        
+        self.navigationItem.title = datePickerView.presentedMonthView?.monthDescription
 
     }
     
@@ -28,8 +30,20 @@ class CalendarViewController: UIViewController, JBDatePickerViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
     func didSelectDay(_ dayView: JBDatePickerDayView) {
         date = dateFormatter.string(from: dayView.date!)
+    }
+    
+    func didPresentOtherMonth(_ monthView: JBDatePickerMonthView) {
+        self.navigationItem.title = datePickerView.presentedMonthView.monthDescription
     }
     
     @IBAction func writeButtonPushed(_ sender: UIButton) {
@@ -40,9 +54,10 @@ class CalendarViewController: UIViewController, JBDatePickerViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toDiary") {
+        if segue.identifier == "toDiary" {
             let diaryView = segue.destination as! DiaryViewController
             diaryView.date = self.date
+            
         }
     }
     

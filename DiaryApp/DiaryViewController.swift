@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class DiaryViewController: UIViewController, UITextViewDelegate {
+class DiaryViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet weak var contextView: PlaceHolderTextView!
@@ -20,19 +20,25 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         contextView.delegate = self
-        contextView.layer.borderColor = UIColor.black.cgColor
-        contextView.layer.borderWidth = 1.0
-        contextView.layer.cornerRadius = 10.0
-        contextView.layer.masksToBounds = true
-        
+        navigationController?.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        dateLabel.text = date
+        contextView.layer.borderColor = UIColor.black.cgColor
+        contextView.layer.borderWidth = 1.0
+        contextView.layer.cornerRadius = 10.0
+        contextView.layer.masksToBounds = true
         
-        DispatchQueue(label: "background").async {
+        dateLabel.text = date
+
+        realmReload()
+        
+    }
+    
+    func realmReload() {
+        DispatchQueue.global().async {
             let realm = try! Realm()
             
             if let savedDiary = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
@@ -42,7 +48,7 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
                 }
             }
         }
-        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,7 +67,23 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
             realm.add(diary, update: true)
         }
         
-        self.dismiss(animated: true, completion: nil)
-
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController is CalendarViewController {
+            let realm = try! Realm()
+            
+            let diary = Diary()
+            diary.date = date
+            diary.context = contextView.text
+            
+            try! realm.write {
+                realm.add(diary, update: true)
+            }
+            
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }
